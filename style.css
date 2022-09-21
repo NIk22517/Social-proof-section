@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: left -185px top -236px, right 10px bottom -300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main {
+  height: 100vh;
+  padding: 2rem;
+}
+.container {
+  height: 100vh;
+}
+.product-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 5rem;
+}
+.product__testimonial {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 5rem 5rem 5rem;
+}
+.rating__review {
+  display: flex;
+  align-items: center;
+  color: hsla(300, 43%, 22%, 1);
+  background-color: hsla(301, 23%, 96%, 1);
+  gap: 2rem;
+  width: 30rem;
+  padding: 1.25rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 1s ease;
+}
+
+.product-heading h1 {
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2.5px;
+  line-height: 1.1;
+  color: hsla(300, 43%, 22%, 1);
+  max-width: 300px;
+  transition: all 0.5s ease;
+}
+.product-heading p {
+  font-weight: 500;
+  padding-top: 1.5rem;
+  max-width: 380px;
+}
+
+.two {
+  margin: 1rem 0 1rem 3rem;
+}
+.three {
+  margin: 0 0 1rem 6rem;
+}
+
+.rating__review:hover {
+  filter: saturate(8);
+  translate: -50px 0;
+}
+.profile__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.product__testimonial__user {
+  background-color: hsla(300, 43%, 22%, 1);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  transition: all 1s ease;
+}
+.profile__photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+blockquote {
+  padding-top: 2rem;
+  color: white;
+}
+
+.user_two {
+  translate: 0 40px;
+}
+.user_three {
+  translate: 0 80px;
+}
+.user_one:hover {
+  translate: 0 -20px;
+  filter: brightness(1);
+  background-color: rgb(122, 8, 57);
+}
+.user_two:hover {
+  translate: 0 0px;
+  filter: brightness(1);
+  background-color: rgb(122, 8, 57);
+}
+.user_three:hover {
+  translate: 0 40px;
+  filter: brightness(1);
+  background-color: rgb(122, 8, 57);
+}
+.product-heading h1:hover {
+  filter: saturate(5);
+}
+.profile__name h3 {
+  color: white;
+}
+.profile__name h4 {
+  color: hsla(333, 80%, 67%, 1);
+}
+
+@media (max-width: 1100px) and (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-info {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .product-heading {
+    padding: 2rem;
+  }
+  .product-heading h1 {
+    max-width: 100%;
+    text-align: center;
+    padding: 0rem 10rem;
+  }
+  .product-heading p {
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 5rem;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5rem;
+  }
+  .rating__review {
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .star {
+    padding-top: 1rem;
+  }
+  .rating__review h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .two {
+    margin: 0;
+  }
+  .three {
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: url("./images/bg-pattern-top-mobile.svg"),
+      url("./images/bg-pattern-bottom-mobile.svg");
+    background-position: left -24px top -5px, right -15px bottom -220px;
+  }
+  .product-info {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 0;
+  }
+  .product-heading h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .product-heading p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .rating__review {
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .one {
+    margin: 1rem 0rem;
+  }
+  .two {
+    margin: 0%;
+  }
+  .three {
+    margin: 1rem 0rem;
+  }
+  .product__testimonial {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 2rem 1rem;
+  }
+  .user_two {
+    translate: 0 0;
+  }
+  .user_three {
+    translate: 0 0;
+  }
+}
+
+@media (hover: hover) {
+  .user_one:hover {
+    translate: 0 -20px;
+    filter: brightness(1);
+    background-color: rgb(122, 8, 57);
+  }
+  .user_two:hover {
+    translate: 0 0px;
+    filter: brightness(1);
+    background-color: rgb(122, 8, 57);
+  }
+  .user_three:hover {
+    translate: 0 40px;
+    filter: brightness(1);
+    background-color: rgb(122, 8, 57);
+  }
+  .product-heading h1:hover {
+    filter: saturate(5);
+  }
+  .rating__review:hover {
+    filter: saturate(8);
+    translate: -50px 0;
+  }
+}
