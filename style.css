@@ -62,11 +62,6 @@ main {
 .three {
   margin: 0 0 1rem 6rem;
 }
-
-.rating__review:hover {
-  filter: saturate(8);
-  translate: -50px 0;
-}
 .profile__info {
   display: flex;
   align-items: center;
@@ -94,24 +89,7 @@ blockquote {
 .user_three {
   translate: 0 80px;
 }
-.user_one:hover {
-  translate: 0 -20px;
-  filter: brightness(1);
-  background-color: rgb(122, 8, 57);
-}
-.user_two:hover {
-  translate: 0 0px;
-  filter: brightness(1);
-  background-color: rgb(122, 8, 57);
-}
-.user_three:hover {
-  translate: 0 40px;
-  filter: brightness(1);
-  background-color: rgb(122, 8, 57);
-}
-.product-heading h1:hover {
-  filter: saturate(5);
-}
+
 .profile__name h3 {
   color: white;
 }
