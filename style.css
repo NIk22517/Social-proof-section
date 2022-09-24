@@ -109,7 +109,7 @@ blockquote {
     background-color: rgb(122, 8, 57);
   }
   .user_three:hover {
-    translate: 0 -40px;
+    translate: 0 -20px;
     filter: brightness(1);
     background-color: rgb(122, 8, 57);
   }
