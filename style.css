@@ -97,6 +97,31 @@ blockquote {
   color: hsla(333, 80%, 67%, 1);
 }
 
+@media (hover: hover) {
+  .user_one:hover {
+    translate: 0 -20px;
+    filter: brightness(1);
+    background-color: rgb(122, 8, 57);
+  }
+  .user_two:hover {
+    translate: 0 -40px;
+    filter: brightness(1);
+    background-color: rgb(122, 8, 57);
+  }
+  .user_three:hover {
+    translate: 0 -60px;
+    filter: brightness(1);
+    background-color: rgb(122, 8, 57);
+  }
+  .product-heading h1:hover {
+    filter: saturate(5);
+  }
+  .rating__review:hover {
+    filter: saturate(8);
+    translate: -50px 0;
+  }
+}
+
 @media (max-width: 1100px) and (min-width: 800px) {
   .container {
     display: flex;
@@ -194,30 +219,5 @@ blockquote {
   }
   .user_three {
     translate: 0 0;
-  }
-}
-
-@media (hover: hover) {
-  .user_one:hover {
-    translate: 0 -20px;
-    filter: brightness(1);
-    background-color: rgb(122, 8, 57);
-  }
-  .user_two:hover {
-    translate: 0 -40px;
-    filter: brightness(1);
-    background-color: rgb(122, 8, 57);
-  }
-  .user_three:hover {
-    translate: 0 -60px;
-    filter: brightness(1);
-    background-color: rgb(122, 8, 57);
-  }
-  .product-heading h1:hover {
-    filter: saturate(5);
-  }
-  .rating__review:hover {
-    filter: saturate(8);
-    translate: -50px 0;
   }
 }
